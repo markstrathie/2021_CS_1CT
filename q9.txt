@@ -1,0 +1,41 @@
+You are to write a program for the task described below.  You may wish to use the pattern you have just learned/used in Question 4a above, and which is repeated below.  The task below may seem daunting.  If so, remember to read it a number of times, and look for the parts / patterns you do know how to do.  Think first.
+
+Assume you have a file of correctly spelled words, words.txt, with one word per line.  Read this into a list. 
+Next, read in a sentence from the user, with words separated by spaces only and with no punctuation. 
+Then, you should check to see if each word in the user’s sentence is spelled  correctly, which for this task, depends on whether it appears in the file of words, words.txt).  Count up how many words are spelled incorrectly.
+Write out the sentence: any word that is not correctly spelled should be printed with two asterisk (*) characters on each side of it.
+Finally, write out the count of incorrectly spelled words.
+
+Note that the case of the letters, i.e whether they are uppercase or lowercase, matters when you are checking the spelling - see the example below where "the" is not the same as "The", and the latter is deemed to be spelled incorrectly as it doesn't appear in the file with a capital first letter. 
+
+Hint: You can be building the sentence to print out at the end as you are checking the spelling of the words.
+
+Your program should work for any file of words and any valid sentence typed by the user.  As one example of the program's intended operation, if the file of correctly spelled words contains:
+
+the
+is
+are
+cat
+dog
+brown
+they
+
+and the sentence entered by the user is
+
+The dog it broon
+
+the output should be
+
+**The** dog **it** **broon**
+Count of incorrectly spelled words: 3
+
+
+------------------------------------------
+This is the pattern from the previous question to determine if a given value, held in the variable givenValue, appears in a list of values, named theValues.
+
+create a variable with the name found, associated with the value False
+for each value in the list of values:
+        if the given value is equal to the current value from the list:
+                set the found variable to be True
+
+The variable named found now holds True or False indicating whether the word was in the list.  
